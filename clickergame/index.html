@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clicker Game Youniverse Studio</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+	<header>
+	  <h1> Youniverse Studios Clicker Game [Practice] </h1>
+	</header>
+	<div class="gamegrid">
+	
+		<div class="scorecard">
+			<span id="scoretag">Score <br> [ <span id="score">0</span> ]</span>
+		</div>
+
+	  	<div class="forcecard">
+		<button id="forcebtn" onclick="increaseForce()"> Increase Click Force [<span id="forcecost">30</span>] <br> Click Force: <span id="forceval">1</span> Point </button>
+		</div>
+		
+		<div class="clickcard">
+		<img id="clickarea" src="src/blackhole.png" onclick="addScore()">
+		</div>
+
+		<div class="shopcard">
+		<button id="generatorbtn" onclick="buyGenerator()"> Purchase Generator 1 [<span id="generatorcost">15</span>] <br> <span id="generators">0</span> Generators running </button>
+		<button id="generatorbtn2" onclick="buyGenerator2()"> Purchase Generator 2 [<span id="generatorcost2">30</span>] <br> <span id="generators2">0</span> Generators running </button>
+		<button id="generatorbtn3" onclick="buyGenerator3()"> Purchase Generator 3 [<span id="generatorcost3">60</span>] <br> <span id="generators3">0</span> Generators running </button>
+		<button id="generatorbtn4" onclick="buyGenerator4()"> Purchase Generator 4 [<span id="generatorcost4">60</span>] <br> <span id="generators4">0</span> Generators running </button>
+	</div>
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+	</body>
+</html>
